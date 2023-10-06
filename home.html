@@ -1,0 +1,258 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Brayden Daly</title>
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3872/3872759.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Code+Pro:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'CSS_STYLES/banner.css' %}">
+        <link rel="stylesheet" href="{% static 'CSS_STYLES/header.css' %}">
+        <link rel="stylesheet" href="{% static 'CSS_STYLES/apps.css' %}">
+        <link rel="stylesheet" href="{% static 'CSS_STYLES/about.css' %}">
+        <link rel="stylesheet" href="{% static 'CSS_STYLES/grid.css' %}">
+        <link rel="stylesheet" href="{% static 'CSS_STYLES/moreinfo.css' %}">
+        <link rel="stylesheet" href="{% static 'CSS_STYLES/experience.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Source+Code+Pro:wght@700&display=swap" rel="stylesheet">
+
+            
+    </head>
+    <body>
+        <div class="banner">
+            <div class="left">
+                <div>
+                    <a href="mailto:emailbraydendaly@gmail.com">
+                        <img class="mail" width="50px" height="50px" src="media/envelopenewfinal.png" alt="email Logo">
+                    </a>
+                </div>
+            </div>
+            <div class="middle">
+                <a href="#homejump" style="text-decoration: none;">
+                <div class="home">
+                    Home
+                </div>
+                </a>
+                <a href="#aboutjump" style="text-decoration: none;">
+                <div class="about">
+                    About
+                </div>
+                </a>
+                <a href="#experiencejump" style="text-decoration: none;">
+                <div class="experience">
+                    Experience
+                </div>
+                </a>
+                <a href="#projectsjump" style="text-decoration: none;">
+                <div class="projects">
+                    Projects
+                </div>
+                </a>
+            </div>
+            <div class="right">
+                <div>
+                    <a href="https://github.com/CS50555" target=”_blank”>
+                        <img class="github" width="50px" height="50px" src="media/github.svg" alt="GitHub Logo">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/braydendaly/" target=”_blank”>
+                        <img class="linkedin" width="50px" height="50px" src="media/linkedin.svg" alt="linkedin logo">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.youtube.com/" target=”_blank”></a>
+                        <img class="youtube" width="50px" height="50px" src="media/youtube.svg" alt="youtube logo">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <a id="homejump">
+        <div class="header">
+            <div><img class="background_img" width="100%" height="100%" src="media/backgnd3.jpg"></div>
+            <div class="writing">
+                <h1 class="header1">hello_wrld!</h1>
+                <h1 class="header2">i am Brayden Daly and i am a <br /> <span id="typewriter"></span><span id="cursor">|</span></h1>
+                <script>
+                    function sleep(ms){
+                        return new Promise((resolve) => setTimeout(resolve, ms) );
+                    }
+
+                    const phrase = ['creator!', 'Electrical Engineer!', 'programmer!', 'student!'];
+                    const el = document.getElementById("typewriter");
+
+                    let sleepTime = 100;
+
+                    let curPhraseIndex = 0;
+
+                    const writeloop = async() => {
+                        while (true) {
+                            let curWord = phrase[curPhraseIndex];
+
+                            for (let i = 0; i < curWord.length; i++) {
+                                el.innerText = curWord.substring(0, i + 1);
+                                await sleep(sleepTime );
+                            }
+
+                            await sleep(1000);
+
+                            for (let i = curWord.length; i > 0; i--) {
+                                el.innerText = curWord.substring(0, i - 1);
+                                await sleep(sleepTime );
+                            }
+
+                            await sleep(1000);
+
+                            if (curPhraseIndex === phrase.length - 1)
+                            {
+                                curPhraseIndex = 0;
+                            }
+                            else
+                            {
+                                curPhraseIndex++;
+                            }
+
+                        }
+                    };
+
+                    writeloop();
+                </script>
+            </div>
+        </div>
+        </a>
+        <a id="aboutjump"></a>
+        <div class="totalinfo">
+            <div class="abtme">
+                <h1 class="projecttitle"> About Me! </h1>
+                <p>
+                    Hi! My name is Brayden Daly and I am an EE student at Cal Poly SLO. I have leadership experience in both software and hardware. I gained software experience through coding projects in Python and digital design projects, and hardware experience through PCB design and Wire Harnessing at Cal Poly's Racing Club.
+                </p>
+                <div>
+                    <h1 class="resumetitle">Resume</h1>
+                </div>
+                <div>
+                    <a href="media/RESUMECURRENT.pdf" target="_blank" rel="noopener noreferrer">
+                    <img class="resumepic" src="media/newpdf.png" alt="resume-icon"><p class="text-center">
+                    </a>
+                </div>
+            </div>
+            <div class="Skills">
+                <h1 class="projecttitle">Skills</h1>
+                <div class="outergrid">
+                    <div class="beginner">
+                        <h1>Beginner</h1>
+                        <div class="grid">
+                            <div class="grid-item-beg">C</div>
+                            <div class="grid-item-beg">Verilog</div>
+                            <div class="grid-item-beg">Assembly Code</div>
+                            <div class="grid-item-beg">PCB Design</div>
+                            <div class="grid-item-beg">MATLAB</div>
+                            <div class="grid-item-beg">HTML</div>
+                            <div class="grid-item-beg">CSS</div>
+                            <div class="grid-item-beg">Verilog</div>
+                            <div class="grid-item-beg">SOLIDWORKS</div>
+                            <div class="grid-item-beg">Altium</div>
+                            <div class="grid-item-beg">Eagle</div>
+                        </div>
+                    </div>
+                    <div class="intermediate">
+                        <h1>Intermediate</h1>
+                        <div class="grid">
+                            <div class="grid-item">Python</div>
+                            <div class="grid-item">Arduino</div>
+                            <div class="grid-item">LTSpice</div>
+                            <div class="grid-item">Oscilloscopes</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+        <a id="experiencejump"></a>
+        <div class="experiencesec">
+            <div>
+                <h1 class="projecttitle">Experience</h1>
+            </div>
+            <div>
+                <h1 style="text-align: left;
+                        margin-left: 50px;
+                        font-size: 40px;"><a href="https://www.calpolyracing.org/" target=”_blank” style="text-decoration: none;" >Cal Poly Racing FSAE</a></h1>
+                    <h1 style="text-align: left;
+                            margin-left: 50px;">Wire Harnessing Subsystem Lead (9/2022 - Present)</h1>
+                    <p style="text-align: left;
+                        margin-left: 50px;">
+                        I have extensive experience at the racing club, where I've been involved in designing, manufacturing, testing, integrating, and maintaining Front, Rear, Engine, and Dyno harnesses for both C-Car and E-Car. I collaborated closely with various leads and utilized Altium, soldering, and reflow stations to design and manufacture an E-Car Discharge Board, incorporating relay and MOSFET components for motor power control and battery cell safety. Additionally, I worked with teammates to create wire harnesses and used tools like RapidHarness, oscilloscopes, power sources, and multimeters to ensure functionality and resolve any issues in PCBs and harnesses during testing.
+                    </p>
+            </div>
+        </div>
+        <a id="projectsjump"></a>
+        <div class="projectssec">
+            <h1 class="projecttitle">Projects</h1>
+            <div class="projectgrid">
+                <div class="grid-item-prod">
+                    <img src="media/matrix.jpg" class= "backpic" alt="Website Pic">
+                    <h1 class = "words">
+                        Matrix Calculator
+                    </h1>
+                    <a href="/admin/" target=”_blank” style="text-decoration: none;" >
+                    <button class="button">
+                        More Info Soon!
+                    </button>
+                    </a>
+                </div>
+                <div class="grid-item-prod">
+                    <img src="media/websitestart.png" class= "backpic" alt="Website Pic">
+                    <h1 class = "words">
+                        This Website!
+                    </h1>
+                    <a href="#homejump" style="text-decoration: none;" >
+                        <button class="button">
+                            More Info Soon!
+                        </button>
+                    </a>
+                </div>
+                <div class="grid-item-prod">
+                    <img src="media/DAC.png" class= "backpic" alt="Website Pic">
+                    <h1 class = "words">
+                        Digital Analog Converter
+                    </h1>
+                    <a href="https://www.calpolyracing.org/" target=”_blank” style="text-decoration: none;" >
+                        <button class="button">
+                            More Info Soon!
+                        </button>
+                    </a>
+                </div>
+                <div class="grid-item-prod">
+                    <img src="media/basysboard.jpg" class= "backpic" alt="Website Pic">
+                    <h1 class = "words" >
+                        Whack-a-mole
+                    </h1>
+                    <button class="button">
+                        More Info Soon!
+                    </button>
+                </div>
+                <div class="grid-item-prod">
+                    <img src="media/gameboy.jpg" class= "backpic" alt="Website Pic">
+                    <h1 class = "words" >
+                        GameBoy
+                    </h1>
+                    <button class="button">
+                        More Info Soon!
+                    </button>
+                </div>
+                <div class="grid-item-prod">
+                    <img src="media/ee151.png" class= "backpic" alt="Website Pic">
+                    <h1 class = "words" >
+                        RFID Door Lock
+                    </h1>
+                    <button class="button">
+                        More Info Soon!
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

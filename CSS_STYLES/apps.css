@@ -1,0 +1,67 @@
+.github{
+    align-items: center;
+    margin-top: 5px;
+    background-color: white;
+    border-radius: 800px;
+    height: fit-content;
+    cursor: pointer;
+
+}
+
+.linkedin{
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    
+
+}
+
+.youtube{
+    align-items: center;
+    padding-top: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: size 0.7s,
+    color 1s;
+
+}
+
+
+
+.mail{
+    align-items: center;
+    margin-top: 5px;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.resumepic{
+    height: 200px;
+    width: 200px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.github:hover{
+    transform: scale(1.2);
+}
+
+.youtube:hover{
+    transform: scale(1.2);
+}
+
+.mail:hover{
+    transform: scale(1.2);
+}
+
+.resumepic:hover{
+    transform: scale(1.2);
+}
+
+.linkedin:hover{
+    transform: scale(1.2);
+}

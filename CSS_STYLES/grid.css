@@ -1,0 +1,59 @@
+.outergrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+    font-size: large;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+}
+
+.beginner{
+    border-radius: 5px;
+    height: 100%;
+    
+}
+
+h1{
+    opacity: 1;
+}
+
+.intermediate{
+    border-radius: 5px;
+    background-blend-mode: color;
+}
+
+.grid-item{
+    background-color: rgb(128, 249, 196);
+    border-radius: 5px;
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.grid-item-beg{
+    background-color: rgb(223, 128, 249);
+    border-radius: 5px;
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+.grid-item:hover{
+    transform: scale(1.2);
+}
+
+.grid-item-beg:hover{
+    transform: scale(1.2);
+}

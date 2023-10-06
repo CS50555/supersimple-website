@@ -1,0 +1,142 @@
+.banner{
+    height: 60px;
+    width: 100%;
+    background-color: transparent;
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    font-size: 30px;
+    z-index: 100;
+    opacity: 100%;
+    transition: background-color 1s;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+
+
+.banner:hover{
+    background-color: black;
+    opacity: 100%;
+}
+
+.left{
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 150px;
+}
+
+.middle{
+    color: white;
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.right{
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: right;
+    margin-right: 150px;
+
+
+}
+
+.home{
+    background-color: transparent;
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.7s,
+        color 1s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 16px;
+    padding-left: 16px;
+    vertical-align: top;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.home:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.about:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.experience:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.projects:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+
+.about{
+    background-color: transparent;
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.7s,
+        color 1s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-right: 5px;
+    margin-left: 5px;
+    vertical-align: top;
+}
+
+.experience{
+    background-color: transparent;
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.7s,
+        color 1s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 16px;
+    padding-left: 16px;
+    vertical-align: top;
+    margin-right: 5px;
+    margin-left: 5px;
+    
+}
+
+.projects{
+    background-color: transparent;
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.7s,
+        color 1s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 16px;
+    padding-left: 16px;
+    vertical-align: top;
+    margin-left: 5px;
+}
+
